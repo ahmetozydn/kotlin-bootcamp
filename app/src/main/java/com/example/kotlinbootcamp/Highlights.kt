@@ -18,6 +18,10 @@ class Highlights {
         result?.let {
             println(it);
         }
+        // step is infix function
+        for(a in 10 .. 20 step 5){ // downTo for decrease the number
+            println("hi")
+        }
     }
 
 }
