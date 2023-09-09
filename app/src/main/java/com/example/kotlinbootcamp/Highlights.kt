@@ -3,7 +3,9 @@ package com.example.kotlinbootcamp
 class Highlights {
 
     // LECTURE 1
+
     fun main() {
+
         val country : String = "Istanbul"
         println("Country : $country") // in JS ${}
 
@@ -22,6 +24,7 @@ class Highlights {
         for(a in 10 .. 20 step 5){ // downTo for decrease the number
             println("hi")
         }
+
     }
 
 }

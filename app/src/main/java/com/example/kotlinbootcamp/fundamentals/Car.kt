@@ -1,5 +1,7 @@
 package com.example.kotlinbootcamp.fundamentals
 
+import java.util.Date
+
 class Car{
     private lateinit var list : ArrayList<String> // primitive types cannot be used together with lateinit keyword
     private  var surname : String // String is not a primitive types, reference type
@@ -13,7 +15,10 @@ class Car{
     fun prn() = println(age).also {
         println(age)
     }
+
 }
+
+
 // primary constructor example
 class Car2(private var name: String){ // without putting var keyword, variable cannot be reachable
     fun method() = run { name = "name" }
@@ -23,9 +28,8 @@ class Car2(private var name: String){ // without putting var keyword, variable c
         // because Kotlin prefer to use of primary constructor, there cannot be make initialization inside the constructor. init is used for that reason
     }
 
-    // extension function definition
+    // extension function definition, can be called from everywhere
     fun Int.add(x: Int) = this + x
-
 
     // Define a lambda expression that takes two integers and returns their sum
     val add: (Int, Int) -> Int = { x, y -> x + y }
@@ -35,4 +39,6 @@ class Car2(private var name: String){ // without putting var keyword, variable c
         println(it) // Output: 8
     }
 
+
 }
+
